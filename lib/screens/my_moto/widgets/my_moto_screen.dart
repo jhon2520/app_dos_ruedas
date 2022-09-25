@@ -12,12 +12,16 @@ class MyMotoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
-          children:const [
+          children: const [
             CustomAppBar(
               mainTitle: MyMotoScreenStrings.mainTitle,
-              backgroundColor: AppColors.backgroundScaffoldMyMoto)
+              backgroundColor: AppColors.backgroundScaffoldMyMoto),
+        
+            
+            MyMotoForm()
+        
           ],
         ),
       ),

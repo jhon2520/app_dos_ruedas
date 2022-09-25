@@ -8,6 +8,7 @@ import 'package:dos_ruedas_app/widgets/widgets.dart' show MenuToggleWidget,UserD
 
 
 
+
 class CustomAppBar extends StatelessWidget {
   
   final Color backgroundColor;
@@ -21,12 +22,12 @@ class CustomAppBar extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return Container(
-      height: size.height * 0.35,
+      height: size.height * AppLayoutConst.customAppBarSize,
       width: double.infinity,
       decoration: _customAppBarDecoration(),
       child: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: AppLayout.mainHorizontalPadding,vertical: AppLayout.mainVerticalPadding),
+          padding: const EdgeInsets.symmetric(horizontal: AppLayoutConst.mainHorizontalPadding,vertical: AppLayoutConst.mainVerticalPadding),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -34,7 +35,7 @@ class CustomAppBar extends StatelessWidget {
                 mainAxisAlignment:  MainAxisAlignment.spaceBetween,
                 children: [
                   const MenuToggleWidget(),
-                  Text(mainTitle, style: AppFonts.mainTitle,)
+                  Expanded(child: Text(mainTitle, style: AppFonts.mainTitle,))
 
                 ],
               ),
@@ -49,7 +50,7 @@ class CustomAppBar extends StatelessWidget {
   BoxDecoration _customAppBarDecoration() =>  BoxDecoration(
     color: backgroundColor,
     borderRadius: const BorderRadius.only(
-      bottomLeft: Radius.circular(AppLayout.mainRaidiusContainer)
+      bottomLeft: Radius.circular(AppLayoutConst.mainRaidiusContainer)
     )
   );
 }

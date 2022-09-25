@@ -32,7 +32,7 @@ class UserDataWidget extends StatelessWidget {
                         ),
             ),
           const SizedBox(height: 10,),
-          const Text("Jhon Romero", style: AppFonts.fontH3,),
+          const Text("Jhon Romero", style: AppFonts.fontH3Light,),
           const SizedBox(height: 5,),
         ],
       ),
@@ -42,10 +42,10 @@ class UserDataWidget extends StatelessWidget {
   BoxDecoration _customContainerDecoration() => BoxDecoration(
     color: AppColors.mainColorBlur,
     borderRadius: const BorderRadius.only(
-      bottomLeft: Radius.circular(AppLayout.mainRaidiusContainer),
-      topRight: Radius.circular(AppLayout.mainRaidiusContainer),
-      topLeft: Radius.circular(AppLayout.minRaidiusContainer),
-      bottomRight: Radius.circular(AppLayout.minRaidiusContainer),
+      bottomLeft: Radius.circular(AppLayoutConst.mainRaidiusContainer),
+      topRight: Radius.circular(AppLayoutConst.mainRaidiusContainer),
+      topLeft: Radius.circular(AppLayoutConst.minRaidiusContainer),
+      bottomRight: Radius.circular(AppLayoutConst.minRaidiusContainer),
     )
   );
 }
