@@ -1,12 +1,7 @@
-
 import 'package:flutter/material.dart';
 
 import 'package:dos_ruedas_app/const/const.dart';
 import 'package:dos_ruedas_app/widgets/widgets.dart' show MenuToggleWidget,UserDataWidget;
-
-
-
-
 
 
 class CustomAppBar extends StatelessWidget {

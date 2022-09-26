@@ -1,4 +1,6 @@
 
+import 'package:dos_ruedas_app/const/const.dart';
+import 'package:dos_ruedas_app/router/index.dart';
 import 'package:dos_ruedas_app/state/bloc/moto_bloc/moto_bloc.dart';
 import 'package:dos_ruedas_app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -15,10 +17,12 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(create: (context)=> MotoBloc()),
       ],
-      child: const MaterialApp(
+      child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Material App',
-        home: CustomZoomDrawer()
+        onGenerateRoute: (settings) => AppRouter.generateRoute(settings),
+        title: AppStrings.appName,
+        initialRoute: AppRoutesStrings.initialRoute,
+        home: const CustomZoomDrawer(),
       ),
     );
   }

@@ -9,5 +9,6 @@ class MyMotoScreenStrings{
   static const String cilidrajeLabel = "Cilindraje";
   static const String propositoLabel = "Proposito";
   static const String precioLabel = "Precio";
+  static const String separadorOpciones = "Opciones";
 
 }

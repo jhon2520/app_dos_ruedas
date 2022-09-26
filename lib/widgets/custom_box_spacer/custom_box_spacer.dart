@@ -4,17 +4,19 @@ import 'package:flutter/material.dart';
 
 class CustomBoxSpacer extends StatelessWidget {
 
-  final CustomBoxSpacerSizesEnum height;
+  final CustomBoxSpacerSizesEnum size;
+  final bool vertical;
 
   const CustomBoxSpacer({
     Key? key,
-    required this.height
+    required this.size,
+    this.vertical = true
     }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: SizeUtils.getBoxSpacerSize(height),
-    );
+    return vertical 
+    ? SizedBox( height: SizeUtils.getBoxSpacerSize(size))
+    : SizedBox( width: SizeUtils.getBoxSpacerSize(size));
   }
 }

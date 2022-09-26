@@ -32,7 +32,7 @@ class UserDataWidget extends StatelessWidget {
                         ),
             ),
           const SizedBox(height: 10,),
-          const Text("Jhon Romero", style: AppFonts.fontH3Light,),
+          Text("Jhon Romero", style: AppFonts.fontH3Light,),
           const SizedBox(height: 5,),
         ],
       ),

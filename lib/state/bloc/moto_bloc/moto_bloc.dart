@@ -14,8 +14,8 @@ class MotoBloc extends Bloc<MotoEvent,MotoState>{
 
 
     on<ActivateMotoEvent>((event, emit) {
-
-      log("Creando moto en el estado");
+      log("set new moto");
+      emit(MotoSetState(event.newMoto));
 
     });
 

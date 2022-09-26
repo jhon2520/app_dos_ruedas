@@ -13,5 +13,6 @@ class AppColors {
   static  Color? mainLabelColorFont =  Colors.grey[400];
   static const Color mainIconsColor =  Colors.white;
   static Color mainColorBlur = Colors.grey.shade200.withOpacity(0.05);
+  static const Color backgroundColorSecundaryButton = Colors.white70;
 
 }

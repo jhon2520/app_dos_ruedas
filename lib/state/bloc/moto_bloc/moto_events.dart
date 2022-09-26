@@ -8,8 +8,9 @@ abstract class MotoEvent{}
 //* Activar Moto
 class ActivateMotoEvent extends MotoEvent {
 
-  final MotoModel newMoto;
 
+  final MotoModel newMoto;
+  
   ActivateMotoEvent(this.newMoto);
 
 

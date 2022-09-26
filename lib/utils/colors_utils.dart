@@ -29,4 +29,17 @@ class ColorsUtils {
 
   }
 
+  // List<Color>? getShadowColorsByPage(PagesEnum page){
+
+  //   const Map<PagesEnum,List<Color>> shadowColorsMap ={
+  //     PagesEnum.homePage:[AppColors.backgroundScaffoldHome],
+  //     PagesEnum.myMotoPage:[AppColors.backgroundScaffoldMyMoto],
+  //     PagesEnum.settingPage:[AppColors.backgroundScaffoldSetting],
+  //     PagesEnum.alertsPage:[AppColors.backgroundScaffoldGestorAlertas],
+  //   };
+
+  //   return shadowColorsMap[page];
+
+  // }
+
 }

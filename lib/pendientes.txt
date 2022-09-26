@@ -1,1 +1,5 @@
 //Crear funcionalidad de pico y placa que avise un día antes de que te toque restricción
+// Crear opción para guardar los taller y puntos de interés
+// Crear ventana loading
+//en la opción de la información de la moto colocar que se genere un archivo que se pueda compartir
+// En la parte de los taller colocar que haya un contacto del taller al que se pueda llamar

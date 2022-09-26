@@ -11,7 +11,6 @@ class MotoModel{
   final PropositoEnum proposito;
   final double precio;
 
-
   MotoModel({
 
     required this.marca, 
@@ -22,6 +21,6 @@ class MotoModel{
     required this.proposito,
     required this.precio
     
-    });
+  });
 
 }
