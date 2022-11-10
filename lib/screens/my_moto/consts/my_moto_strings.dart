@@ -10,5 +10,7 @@ class MyMotoScreenStrings{
   static const String propositoLabel = "Proposito";
   static const String precioLabel = "Precio";
   static const String separadorOpciones = "Opciones";
+  static const String customTitleMainTitle = "¿Qué deseas revisar?";
+  static const String customTitleSubTitle = "Selecciona";
 
 }

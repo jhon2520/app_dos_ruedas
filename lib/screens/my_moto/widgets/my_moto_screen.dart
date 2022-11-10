@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:dos_ruedas_app/state/bloc/moto_bloc/moto_bloc.dart';
 import 'package:flutter/material.dart';
 
@@ -53,8 +51,8 @@ class MyMotoScreen extends StatelessWidget {
             padding: const  EdgeInsets.symmetric(horizontal: AppLayoutConst.mainHorizontalPadding),
             child: CustomTitleWidget(
                 backgroundColor: ColorsUtils.getColorByPage(PagesEnum.myMotoPage)!, 
-                title: "¿Qué deseas revisar?" ,
-                subTitle: "Selecciona"
+                title: MyMotoScreenStrings.customTitleMainTitle ,
+                subTitle: MyMotoScreenStrings.customTitleSubTitle
                 ,),
           ),
 

@@ -21,6 +21,8 @@ class AppRouter{
         return MaterialPageRoute(builder: (BuildContext context)=>  const SettingScreen());
       case AppRoutesStrings.alerstPage:
         return MaterialPageRoute(builder: (BuildContext context)=>  const GestorAlertasScreen());
+      case AppRoutesStrings.loginPage:
+        return MaterialPageRoute(builder: (BuildContext context)=>  const LoginScreen());
       default:
         //TODO: Crear una ventana de loading
         return MaterialPageRoute(builder: (_)=> const HomeScreen());

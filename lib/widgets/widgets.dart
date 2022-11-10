@@ -17,3 +17,4 @@ export 'custom_box_spacer/custom_box_enums.dart';
 export 'custom_title/custom_title_const.dart';
 export './button_primary/button_primary.dart';
 export './button_secondary/button_secondary.dart';
+export './animated_moto.dart/animated_moto.dart';

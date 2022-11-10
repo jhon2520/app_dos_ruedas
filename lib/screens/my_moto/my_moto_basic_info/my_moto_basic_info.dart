@@ -36,7 +36,7 @@ class MyMotoBasicInfoScreen extends StatelessWidget {
 
               const CustomBoxSpacer(size: CustomBoxSpacerSizesEnum.xl),
 
-              const MyMotoForm(),
+               MyMotoForm(),
             ],
           ),
         ),

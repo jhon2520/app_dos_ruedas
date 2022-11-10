@@ -14,5 +14,6 @@ class AppColors {
   static const Color mainIconsColor =  Colors.white;
   static Color mainColorBlur = Colors.grey.shade200.withOpacity(0.05);
   static const Color backgroundColorSecundaryButton = Colors.white70;
+  static const Color whiteColor = Colors.white;
 
 }

@@ -24,7 +24,7 @@ class MyMotoForm extends StatefulWidget {
 class _MyMotoFormState extends State<MyMotoForm> {
 
   final _formKey = GlobalKey<FormState>();
-  String? _marca;
+  String _marca = "";
 
 
   @override
@@ -57,7 +57,7 @@ class _MyMotoFormState extends State<MyMotoForm> {
                   InputFormatersList.onlyLetter
                 ],
                 onChange: (value) {
-                  _marca = value;
+                  _marca = value!;
                 },
                 validator: (value){
                   return CustonFieldValidators.validateNoEmptyValue(value); 
@@ -131,20 +131,7 @@ class _MyMotoFormState extends State<MyMotoForm> {
                 CustomPrimaryButton(
                   labelBtn: MyMotoBasicInfoStrings.btnPrimaryGuardaInfoBasica,
                   backgroundColor:ColorsUtils.getColorByPage(PagesEnum.myMotoPage),
-                  onPressed: (){
-
-                      //TODO: Validar campos vacíos
-                        final MotoModel moto =  MotoModel(
-                      cilindraje: "200",
-                      color: "Verde",
-                      marca: _marca!,
-                      modelo: "2023",
-                      precio: 123456,
-                      proposito: PropositoEnum.enduro,
-                      referencia: "123"
-                    );
-                    motoBloc.add(ActivateMotoEvent(moto));
-                  },
+                  onPressed: ()=> onPressedSaveButton(bloc: motoBloc),
                   ),
                   const CustomBoxSpacer(size: CustomBoxSpacerSizesEnum.m,vertical: false),
                 CustomSecundaryButton(
@@ -163,6 +150,24 @@ class _MyMotoFormState extends State<MyMotoForm> {
       ),
     );
   }
+
+  void onPressedSaveButton({required MotoBloc bloc}){
+
+        //TODO: Validar campos vacíos
+    final MotoModel moto =  MotoModel(
+    cilindraje: "200",
+    color: "Verde",
+    marca: _marca,
+    modelo: "2023",
+    precio: 123456,
+    proposito: PropositoEnum.enduro,
+    referencia: "123"
+    );
+    bloc.add(ActivateMotoEvent(moto));
+    Navigator.pop(context);
+
+  }
+
 }
 
 
